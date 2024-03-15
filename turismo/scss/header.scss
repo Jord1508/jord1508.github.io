@@ -1,0 +1,264 @@
+header{
+    position: fixed;
+    width: 70px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    .main-logo{
+        position: fixed;
+        top: 15px;
+        left: 85px;
+        z-index: 1;
+    }
+    .btn-burguer-menu{
+        padding-top: 10px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        margin-top: 16px;
+        .btn-burguer{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            height: 20px;
+            li{
+                display: block;
+                height: 4px;
+                width: 30px;
+                margin: 5px auto;
+                border-radius: 5px;
+                background-color: white;
+                transition: 0.3s;
+                
+            }
+        }
+        .tit-btn-burguer1,
+        .tit-btn-burguer2{
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+            padding: 3px 0;
+            font-size: 11px;
+            @extend .raleway-r;
+        }
+        .tit-btn-burguer2{
+            display: none;
+        }
+        &.active{
+            .btn-burguer{
+                li{
+                    background-color: black;
+                }
+                li:nth-child(2n){
+                    opacity: 0;
+                }
+                li:nth-child(1n){
+                    transform: rotate(49deg) translate(8px, 6px);
+                }
+                li:nth-child(3n){
+                    transform: rotate(-49deg) translate(6px, -5px);
+                }
+            }
+            .tit-btn-burguer1{
+                display: none;
+                
+            }
+            .tit-btn-burguer1,
+            .tit-btn-burguer2{
+                color: black;
+            }
+            .tit-btn-burguer2{
+                display: block;
+            }
+        }
+    }
+
+    nav {
+        //background: black;
+        position: fixed;
+        width: 0px;
+        top: 0;
+        height: 100vh;
+        padding-top: 0;
+        padding-left: 0px;
+        
+        .items-menu-nav{
+            position: relative;
+            z-index: 1;
+            ul{
+                li{
+                    a{
+                        color: white;
+                        padding: 12px 0;
+                        display: inline-block;
+                        position: relative;
+                        padding-right: 60px;
+                        @extend .poppins-sb;
+                        &:before,
+                        &:after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            background-color: $yellow;
+                            bottom: 0;
+                        }
+                        &:before{
+                            height: 4px;
+                            width: 0;
+                        }
+                        &:after{
+                            height: 2px;
+                        }
+                        &:hover{
+                            color: $yellow;
+                            &:before{
+                                width: 75%;
+                                transition: 0.3s;
+                            }
+                            &:after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .items-social-nav{
+            position: fixed;
+            bottom: 0;
+            z-index: 1;
+            left: 0;
+            width: 70px;
+            text-align: center;
+            transition: 0.3s;
+            p{
+                opacity: 0;
+                transition: 0.3s;
+            }
+            ul{
+                li{
+                    opacity: 1;
+                    a{
+                        color: white;
+                        text-align: center;
+                        width: 25px;
+                        display: inline-block;
+                        margin-bottom: 27px;
+                        height: 25px;
+                        font-size: 25px;
+                        transition: all 0.3s;
+                        &:hover{
+                            color: $yellow;
+                            
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+        &:after,
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 100vh;
+            top: 0;
+        }
+        &:before{
+            background-color: $yellow;
+            width: 70px;
+            z-index: 1;          
+        }
+        &:after{
+            background-color: black;
+            width: 100%;
+        }
+        &:after,
+        &:before,
+        .items-menu-nav{
+            left: -80%;
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+        }
+        &.active{
+            padding-top: 8rem;
+            padding-left: 316px;
+            width: 100%;
+            &:after,
+            &:before,
+            .items-menu-nav{
+                left: 0;
+                visibility: visible;
+                opacity: 1;
+
+            }
+            .items-menu-nav{
+                ul{
+                    margin-bottom: 50px;
+                    li {
+                        a{
+                            opacity: 0;
+                            animation-name: fadeInMenuItem;
+                            animation-duration: 0.2s;
+                            animation-iteration-count: 1;
+                            animation-fill-mode: forwards;
+                            position: relative;
+                        }
+                    }
+                    
+                    @for $i from 1 through 7 {
+                        li:nth-child(#{$i}n) > a {
+                            animation-delay: $i * 0.13s;
+                        }
+                    }
+
+                }
+                     
+                @keyframes fadeInMenuItem {
+                    from {
+                        opacity: 0;
+                        left: -100px;
+
+                    }
+
+                    to {
+                        opacity: 1;
+                        left: 0;
+                    }
+                }
+            }
+            .items-social-nav{
+                position: relative;
+                animation: left-to-right 0.3s;
+                color: white;
+                width: auto;
+                text-align: left;
+                ul{
+                    margin-top: 10px;
+                    li{
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+                p{
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    
+}
+
+@keyframes left-to-right{
+    0%{
+        left: -80%;
+    }
+    100%{
+        left: 0;
+    }
+}

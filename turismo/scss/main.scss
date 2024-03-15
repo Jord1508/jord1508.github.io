@@ -1,0 +1,32 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+//Colores
+$yellow : #FFDD00;
+$black_1: #262626;
+$black_2: #5A5A5A;
+$black_3: #1C1C1C;
+img{
+    width: 100%;
+}
+
+//FONTS
+@import "fonts";
+
+
+.container-fluid{
+    padding: 0 15px;}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    @extend .poppins-r;
+    color: $black_1;
+}
+@import 'header';
+@import 'footer';
+@import 'home';

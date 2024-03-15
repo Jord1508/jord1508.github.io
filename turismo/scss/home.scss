@@ -1,0 +1,53 @@
+.baner-principal{
+    .baner-carousel-home{
+        .owl-nav{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            height: 0;
+            left: 0;
+            button{
+                height: 80px;
+                width: 80px;
+                color: transparent!important;
+                position: absolute;
+                background-repeat: no-repeat!important;
+                opacity: 0.5;
+                transition: 0.3s;
+                &.owl-prev{
+                    left: 80px;
+                    background-image: url("../imagen/arrow-prev.png")!important;
+                }
+                &.owl-next{
+                    right: 80px;
+                    background-image: url("../imagen/arrow-next.png")!important;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.titulo_1{
+    margin-top: 43px;
+    text-align: center;
+    @extend .poppins-sb;
+    font-size: 50px;
+    span{
+        display: block;
+        @extend .satisfy-r;
+        font-size: 32px;
+        color: $black_2;
+    }
+}
+.btn{
+    display: block;
+    width: 224px;
+    height: 64px;
+    line-height: 65px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px $black_1;
+    color: $black_1;
+}
