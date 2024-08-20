@@ -10,4 +10,14 @@ header {
   header nav .menu-box ul li a {
     color: white !important; }
 
+section.baner-principal {
+  background-image: url("../images/main-img-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.baner-principal .container {
+    background: none; }
+    section.baner-principal .container .card-body .card-title {
+      font-size: 40px; }
+
 /*# sourceMappingURL=main.css.map */
