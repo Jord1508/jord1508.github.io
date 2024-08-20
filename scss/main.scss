@@ -1,0 +1,21 @@
+@import 'owl/owl.carousel.min.css';
+@import 'owl/owl.theme.default.min.css';
+header{
+    background: rgb(8,0,139);
+    background: linear-gradient(90deg, rgba(8,0,139,1) 0%, rgba(227,0,0,1) 100%);
+    background-image: url('../images/bg-main-menu-nav.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    nav{
+        .menu-box{
+            ul{
+                li{
+                    a{
+                        color: white!important;
+                    }
+                }
+            }
+        }
+    }
+}
