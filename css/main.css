@@ -1,5 +1,17 @@
 @import url(owl/owl.carousel.min.css);
 @import url(owl/owl.theme.default.min.css);
+* {
+  padding: 0;
+  margin: 0; }
+
+.v-one .card-title {
+  color: #A71135; }
+  .v-one .card-title span {
+    color: white;
+    display: block; }
+.v-one .card-text {
+  color: white; }
+
 header {
   background: #08008b;
   background: linear-gradient(90deg, #08008b 0%, #e30000 100%);
@@ -11,7 +23,7 @@ header {
     color: white !important; }
 
 section.baner-principal {
-  background-image: url("../images/main-img-banner.png");
+  background-image: url("../images/main-img-banner-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -19,5 +31,34 @@ section.baner-principal {
     background: none; }
     section.baner-principal .container .card-body .card-title {
       font-size: 40px; }
+    section.baner-principal .container .card-body .btn {
+      background-color: #1B2C71 !important;
+      border-color: #AB9669 !important;
+      color: white;
+      font-weight: bold;
+      font-size: 25px; }
+
+section.n_views {
+  background-image: url("../images/red-cinta8202024.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.n_views .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    section.n_views .container .row p {
+      color: white;
+      margin: 0;
+      font-size: 35px;
+      font-weight: bold; }
+
+section.about_us {
+  background-image: url("../images/baner-about-us.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.about_us .container {
+    background: none; }
+    section.about_us .container .row div div .card-title {
+      font-size: 65px;
+      font-weight: bolder; }
 
 /*# sourceMappingURL=main.css.map */
