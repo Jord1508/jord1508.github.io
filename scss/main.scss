@@ -81,6 +81,7 @@ section.about_us{
     background-image: url("../images/baner-about-us.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right center;
     .container{
         background: none;
         .row{
@@ -93,5 +94,30 @@ section.about_us{
                 }
             }
         }
+    }
+}
+section.whats_bulls_pedia{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    .container{
+        background: none;
+        .row{
+            div{
+                div{
+                    .card-title{
+                        font-size: 65px;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}
+section.the_best_events{
+    padding-left: 0;
+    padding-right: 0;
+    img{
+        width: 100%;
     }
 }

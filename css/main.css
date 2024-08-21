@@ -54,11 +54,28 @@ section.n_views {
 section.about_us {
   background-image: url("../images/baner-about-us.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: right center; }
   section.about_us .container {
     background: none; }
     section.about_us .container .row div div .card-title {
       font-size: 65px;
       font-weight: bolder; }
+
+section.whats_bulls_pedia {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center; }
+  section.whats_bulls_pedia .container {
+    background: none; }
+    section.whats_bulls_pedia .container .row div div .card-title {
+      font-size: 65px;
+      font-weight: bolder; }
+
+section.the_best_events {
+  padding-left: 0;
+  padding-right: 0; }
+  section.the_best_events img {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
