@@ -3,6 +3,9 @@
     margin: 0;
 
 }
+.container{
+    width: 80%!important;
+}
 @import 'owl/owl.carousel.min.css';
 @import 'owl/owl.theme.default.min.css';
 .v-one{
@@ -119,5 +122,33 @@ section.the_best_events{
     padding-right: 0;
     img{
         width: 100%;
+    }
+}
+footer{
+    position: relative;
+    .tag-side-span{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        color: white;
+        top: 50%;
+        font-size: 35px;
+        &.tag-left{
+            transform: rotate(270deg);
+            left: 0;
+        }
+        &.tag-right{
+            transform: rotate(90deg);
+            right: 0;
+        }    
+    }
+    .img-bg-footer{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        display: block;
+        z-index: -1;
     }
 }

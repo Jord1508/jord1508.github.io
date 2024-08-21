@@ -4,6 +4,9 @@
   padding: 0;
   margin: 0; }
 
+.container {
+  width: 80% !important; }
+
 .v-one .card-title {
   color: #A71135; }
   .v-one .card-title span {
@@ -77,5 +80,29 @@ section.the_best_events {
   padding-right: 0; }
   section.the_best_events img {
     width: 100%; }
+
+footer {
+  position: relative; }
+  footer .tag-side-span {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 50%;
+    font-size: 35px; }
+    footer .tag-side-span.tag-left {
+      transform: rotate(270deg);
+      left: 0; }
+    footer .tag-side-span.tag-right {
+      transform: rotate(90deg);
+      right: 0; }
+  footer .img-bg-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: block;
+    z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */
