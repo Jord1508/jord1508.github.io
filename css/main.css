@@ -5,7 +5,12 @@
   margin: 0; }
 
 .container {
-  width: 80% !important; }
+  width: 100% !important;
+  margin-left: 0;
+  margin-right: 0; }
+  @media screen and (min-width: 568px) {
+    .container {
+      width: 80% !important; } }
 
 .card {
   background: none;
@@ -66,8 +71,11 @@ section.about_us {
   section.about_us .container {
     background: none; }
     section.about_us .container .row div div .card-title {
-      font-size: 65px;
+      font-size: 45px;
       font-weight: bolder; }
+      @media screen and (min-width: 768px) {
+        section.about_us .container .row div div .card-title {
+          font-size: 65px; } }
 
 section.whats_bulls_pedia {
   background-size: cover;
@@ -76,8 +84,14 @@ section.whats_bulls_pedia {
   section.whats_bulls_pedia .container {
     background: none; }
     section.whats_bulls_pedia .container .row div div .card-title {
-      font-size: 65px;
+      font-size: 45px;
       font-weight: bolder; }
+      @media screen and (min-width: 768px) {
+        section.whats_bulls_pedia .container .row div div .card-title {
+          font-size: 65px; } }
+
+section.register_comunity .container form {
+  margin: 0; }
 
 section.the_best_american_bullies {
   background-size: cover; }

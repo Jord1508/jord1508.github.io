@@ -4,7 +4,12 @@
 
 }
 .container{
-    width: 80%!important;
+    width: 100%!important;
+    margin-left: 0;
+    margin-right: 0;
+    @media screen and (min-width:568px) {
+        width: 80%!important;
+    }
 }
 @import 'owl/owl.carousel.min.css';
 @import 'owl/owl.theme.default.min.css';
@@ -84,6 +89,13 @@ section.n_views{
         }
     }
 }
+@mixin fontTitle{
+    font-size: 45px;
+    font-weight: bolder;
+    @media screen and (min-width:768px) {
+        font-size: 65px;
+    }
+}
 section.about_us{
     background-image: url("../images/baner-about-us.png");
     background-size: cover;
@@ -95,14 +107,14 @@ section.about_us{
             div{
                 div{
                     .card-title{
-                        font-size: 65px;
-                        font-weight: bolder;
+                        @include fontTitle();                        
                     }
                 }
             }
         }
     }
 }
+
 section.whats_bulls_pedia{
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,11 +125,17 @@ section.whats_bulls_pedia{
             div{
                 div{
                     .card-title{
-                        font-size: 65px;
-                        font-weight: bolder;
+                        @include fontTitle();
                     }
                 }
             }
+        }
+    }
+}
+section.register_comunity{
+    .container{
+        form{
+            margin: 0;
         }
     }
 }
