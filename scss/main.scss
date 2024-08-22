@@ -8,6 +8,10 @@
 }
 @import 'owl/owl.carousel.min.css';
 @import 'owl/owl.theme.default.min.css';
+.card{
+    background: none;
+    border: 0;
+}
 .v-one{
     .card-title{
         color: #A71135;
@@ -116,6 +120,12 @@ section.whats_bulls_pedia{
             }
         }
     }
+}
+section.the_best_american_bullies{
+    background-size: cover;
+}
+section.future-products{
+    background-size: cover;
 }
 section.the_best_events{
     padding-left: 0;

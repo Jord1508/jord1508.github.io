@@ -7,6 +7,10 @@
 .container {
   width: 80% !important; }
 
+.card {
+  background: none;
+  border: 0; }
+
 .v-one .card-title {
   color: #A71135; }
   .v-one .card-title span {
@@ -74,6 +78,12 @@ section.whats_bulls_pedia {
     section.whats_bulls_pedia .container .row div div .card-title {
       font-size: 65px;
       font-weight: bolder; }
+
+section.the_best_american_bullies {
+  background-size: cover; }
+
+section.future-products {
+  background-size: cover; }
 
 section.the_best_events {
   padding-left: 0;
