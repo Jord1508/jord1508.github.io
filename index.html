@@ -8,46 +8,51 @@
         rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
         crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" 
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" 
-        href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="pb-3 pt-3">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light container">
             <a class="navbar-brand" href="#">
-                <img src="/images/logo.png" alt="" width="30" height="24" />
-              </a>
+                <img src="images/logo-nav.png" alt=""  />
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="menu-box collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
+                <ul class="navbar-nav col-9">
+                    <li class="nav-item col">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item col">
                         <a class="nav-link" href="#">PRODUCTS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item col">
                         <a class="nav-link" href="#">EVENTS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item col ">
                         <a class="nav-link" href="#">BULLS</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li>
-                        <img>   
-                        <a href="" id="href">LOGIN</a></li>
-                </li>
-                <ul class="navbar-nav">
-                    <li><a class="nav-link" href="#">FB</a></li>
-                    <li><a class="nav-link" href="#">IN</a></li>
-                    <li><a class="nav-link" href="#">TW</a></li>
-                    <li><a class="nav-link" href="#">TK</a></li>
+                <ul class="navbar-nav col-2 navbar-login">
+                    <li class="nav-item">   
+                        <a href="#" id="hrefLogin">
+                            <img src="images/LOGOVECTOR-perrito-negro.png">
+                            <span>LOGIN</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav col-1 ">
+                    <li class="nav-item"><a class="nav-link" href="#">FB</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">IN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TW</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TK</a></li>
                 </ul>
             </div>
         </nav>        
@@ -57,16 +62,25 @@
             <div class="container pb-5 pt-5">
                 <div class="card-body v-one">
                     <h5 class="card-title">THE<span>AMERICAN BULLY </span>IS MY PASSION</h5>
-                    <p class="card-text">BULLSPEDIA is the window for anyone who wants to continue and reaffirm the good we are doing as a community. The most recent to present their best specimen, their litter, their best product for our conceited ones, etc., on the best platform that we can see today.</p>
-                    <a href="#" class="btn btn-info">REGISTER NOW</a>
+                    <p class="card-text">BULLSPEDIA is the window for anyone who wants to 
+                        continue and reaffirm the good we are doing as a community. 
+                        The most recent to present their best specimen, their litter, 
+                        their best product for our conceited ones, etc., on the best 
+                        platform that we can see today.</p>
+                    <a href="#" class="btn">
+                        REGISTER NOW 
+                        <span>
+                            <img src="images/LOGOVECTOR-perrito-blanco.png" alt="">
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="n_views">
+        <section id="boxNumberOfViews" class="n_views">
             <div class="container">
                 <div class="row text-center">
                     <p class="titulo col-6">JOIN TODAY</p>
-                    <p class="valuesViews col-6">+1000 VIEWS</p>
+                    <p class="valuesViews col-6">+<span id="valNumbOfViews" style="font-style: italic;" data-count="1090">0</span> VIEWS</p>
                 </div>
             </div>
         </section>
@@ -80,7 +94,12 @@
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="card-body v-one">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">BULLSPEDIA, represents the affection and love 
+                                that identifies us as breeders, whether professional or beginner, 
+                                this is a PASSION. This community was born to offer and share our 
+                                breeding work, know and recognize the blood that we are working 
+                                throughout our career as breeders, and forgers of better specimens, 
+                                showing with our plat- form, its constant and persevering improvement.</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +143,7 @@
                 <div class="owl-carousel ">
                     <div>
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="../images/bn-evento.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -175,8 +194,21 @@
         <span class="tag-side-span tag-right">CONTACTANOS</span>
     </footer>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
+        let boxContainerViews = document.getElementById('boxNumberOfViews').offsetHeight;
+        let heightScreen = window.innerHeight;
+        heightScreen = (heightScreen - heightScreen) + (boxContainerViews / 2 )
+
+        window.onscroll = () => {
+            let windowScrollAction = window.pageYOffset;
+            if(heightScreen < windowScrollAction){
+                Contador(document.getElementById('valNumbOfViews'));
+            }
+        }
+
         
+
     </script>
     
 </main>

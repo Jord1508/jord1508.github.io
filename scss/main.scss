@@ -1,18 +1,44 @@
+//Variables color
+$azul : #17256B!important;
+$rojo : #A71135!important;
+$blanco : white!important;
+
+@mixin font-face($weight) {
+    font-family: "Roboto Condensed", sans-serif!important;
+    font-optical-sizing: auto!important;
+    font-weight: $weight!important;
+    font-style: normal;
+  }
 *{
     padding: 0;
     margin: 0;
-
+    text-decoration: none!important;
+    @include font-face(400);
 }
+h1,h2,h3,h4,h5,h6{
+    @include font-face(900);
+    color: $rojo;
+    span{
+        @include font-face(900);
+        
+    }
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+
 .container{
     width: 100%!important;
-    margin-left: 0;
-    margin-right: 0;
-    @media screen and (min-width:568px) {
+    @media screen and (min-width:576px) {
+        width: 90%!important;
+    }
+    @media screen and (min-width:768px) {
         width: 80%!important;
     }
 }
-@import 'owl/owl.carousel.min.css';
-@import 'owl/owl.theme.default.min.css';
+
+@import url('owl/owl.carousel.min.css');
+@import url('owl/owl.theme.default.min.css');
 .card{
     background: none;
     border: 0;
@@ -21,28 +47,68 @@
     .card-title{
         color: #A71135;
         span{
-            color: white;
+            color: $blanco;
             display: block;
         }
     }
     .card-text{
-        color: white;
+        color: $blanco;
     }
 }
 
 header{
-    background: rgb(8,0,139);
-    background: linear-gradient(90deg, rgba(8,0,139,1) 0%, rgba(227,0,0,1) 100%);
     background-image: url('../images/bg-main-menu-nav.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     nav{
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+        .navbar-brand{
+            width: 130px;
+            
+            img{
+                width: 100%;
+            }
+        }
         .menu-box{
             ul{
+                // display: inline-block;
+                text-align: center;
                 li{
                     a{
-                        color: white!important;
+                        color: $blanco;
+                    }
+                }
+            }
+            .navbar-login{
+                padding: 0;
+                li{
+                    
+                    text-align: center;
+                    a{
+                        color: $azul;
+                        background-color: $blanco;
+                        display: block;
+                        padding: 10px 10px 0 10px;
+                        position: relative;
+                        img{
+                            width: 70px;
+                        }
+                        span{
+                            display: block;
+                            @include font-face(900);
+                        }
+                        ::after{
+                            content: "";
+                            background-color: $blanco;
+                            display: block;
+                            width: 100%;
+                            height: 5px;
+                            border: 2px solid;
+                            position: absolute;
+                            left: 0;
+                        }
                     }
                 }
             }
@@ -59,14 +125,25 @@ section.baner-principal{
         background: none;
         .card-body{
             .card-title{
-                font-size: 40px;
+                font-size: 60px;
             }
             .btn{
-                background-color: #1B2C71!important;
-                border-color: #AB9669!important;
-                color: white;
+                background-color: $azul;
+                border-color: #B2965F!important;
+                border:2px solid;
+                color: $blanco;
                 font-weight: bold;
                 font-size: 25px;
+                border-radius: 16px;
+                padding: 8px 17px;
+                span{
+                    display: inline-block;
+                    width: 30px;
+                    img{
+                        width: 100%;
+                        vertical-align: inherit;
+                    }
+                }
             }
         }
     }
@@ -80,10 +157,14 @@ section.n_views{
         padding-bottom: 2rem;
         .row{
             p{
-                color: white;
+                color: $blanco;
                 margin: 0;
-                font-size: 35px;
-                font-weight: bold;   
+                @include font-face(900);
+                font-style: italic;
+                font-size: 45px;
+                span{
+                    @include font-face(900);
+                }
             }
 
         }
@@ -158,7 +239,7 @@ footer{
         display: block;
         position: absolute;
         z-index: 1;
-        color: white;
+        color: $blanco;
         top: 50%;
         font-size: 35px;
         &.tag-left{
