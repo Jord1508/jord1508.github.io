@@ -58,8 +58,8 @@
         </nav>        
     </header>
     <main>
-        <section class="baner-principal pb-5 pt-5">
-            <div class="container pb-5 pt-5">
+        <section class="baner-principal">
+            <div class="container">
                 <div class="card-body v-one">
                     <h5 class="card-title">THE<span>AMERICAN BULLY </span>IS MY PASSION</h5>
                     <p class="card-text">BULLSPEDIA is the window for anyone who wants to 
@@ -138,27 +138,56 @@
         </section>
         <section class="the_best_american_bullies" style="background-image: url('../images/bg-future-products.png');">
             <div class="container">
-                <div class="card">
-                    <div class="card-body v-one">
-                        <h5 class="card-title text-center">THE BEST AMERICAN BULLIES</h5>
-                    </div>
-                </div>
+                <h5 class="card-title">THE BEST AMERICAN BULLIES</h5>
                 
-                <!-- Set up your HTML -->
-                <div class="owl-carousel ">
-                    <div>
-                        <div class="card">
-                            <img src="../images/bn-evento.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="owl-carousel CarouselAmericanBullies">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../images/lata.png" class="card-img-top" alt="...">
+                            <div>
+                                <h5 class="card-title">CALI KINGSPIN'S BLACK WIDOW</h5>
                             </div>
-                            <a href="#">View Pedigree</a>
                         </div>
+                        <a href="#">View Pedigree</a>
                     </div>
-                    
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../images/lata.png" class="card-img-top" alt="...">
+                            <div>
+                                <h5 class="card-title">CALI KINGSPIN'S BLACK WIDOW</h5>
+                            </div>
+                        </div>
+                        <a href="#">View Pedigree</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../images/lata.png" class="card-img-top" alt="...">
+                            <div>
+                                <h5 class="card-title">CALI KINGSPIN'S BLACK WIDOW</h5>
+                            </div>
+                        </div>
+                        <a href="#">View Pedigree</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../images/lata.png" class="card-img-top" alt="...">
+                            <div>
+                                <h5 class="card-title">CALI KINGSPIN'S BLACK WIDOW</h5>
+                            </div>
+                        </div>
+                        <a href="#">View Pedigree</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="../images/tazas.png" class="card-img-top" alt="...">
+                            <div>
+                                <h5 class="card-title">CALI KINGSPIN'S BLACK WIDOW</h5>
+                            </div>
+                        </div>
+                        <a href="#">View Pedigree</a>
+                    </div>
                 </div>
+
             </div>
         </section>
         <section class="order-certificate">
@@ -178,7 +207,7 @@
                              fingertips, certify yourself now.
                         </p>
                         <a class="btnCertificate" href="#">ORDER YOUR CERTIFICATE</a>
-                        <span class="lineaDivisora">******</span>
+                        <span class="lineaDivisora">Linea que divide en la card</span>
                         <p class="card-text textBlue">+1000 BULLIES CERTIFICATES</p>
                     </div>
                 </div>                 
@@ -208,16 +237,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        let boxContainerViews = document.getElementById('boxNumberOfViews').offsetHeight;
-        let heightScreen = window.innerHeight;
-        heightScreen = (heightScreen - heightScreen) + (boxContainerViews / 2 )
-
-        window.onscroll = () => {
-            let windowScrollAction = window.pageYOffset;
-            if(heightScreen < windowScrollAction){
-                Contador(document.getElementById('valNumbOfViews'));
-            }
-        }
+        
 
         
 

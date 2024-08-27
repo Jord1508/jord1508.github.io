@@ -20,3 +20,24 @@ function Contador(selector){
         });  
     });
 }
+
+$(document).ready(function(){
+  let boxContainerViews = document.getElementById('boxNumberOfViews').offsetHeight;
+  let heightScreen = window.innerHeight;
+  heightScreen = (heightScreen - heightScreen) + (boxContainerViews / 2 )
+
+  window.onscroll = () => {
+      let windowScrollAction = window.pageYOffset;
+      if(heightScreen < windowScrollAction){
+          Contador(document.getElementById('valNumbOfViews'));
+      }
+  }
+
+  $(".CarouselAmericanBullies").owlCarousel({
+    items: 3,
+    margin: 10,
+    nav: true,
+    dots : false
+  });
+
+});
