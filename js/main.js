@@ -39,5 +39,10 @@ $(document).ready(function(){
     nav: true,
     dots : false
   });
+  $(".CarouselFutureProducts").owlCarousel({
+    items: 3,
+    nav: true,
+    dots : false
+  })
 
 });

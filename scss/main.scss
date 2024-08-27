@@ -246,7 +246,6 @@ section.future-products{
             font-size: 45px;
             text-align: center;
             padding-top: 25px;
-            margin-bottom: 25px;
         }
         .owl-carousel{
             
@@ -331,6 +330,13 @@ section.future-products{
         }
     }
 }
+section.the_best_american_bullies{
+    .container{
+        > .card-title{
+            margin-bottom: 55px;
+        }
+    }
+}
 section.order-certificate{
     position: relative;
     > img {
@@ -385,7 +391,7 @@ section.order-certificate{
                         color: $azul;
                         font-size: 20px;
                         max-width: 200px;
-                        line-height: 1;
+                        line-height: 17px;
                         font-weight: bolder !important;
                         margin-top: 15px;
                     }
