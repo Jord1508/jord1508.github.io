@@ -234,14 +234,18 @@ section.register_comunity{
         }
     }
 }
-section.the_best_american_bullies{
+
+section.the_best_american_bullies,
+section.future-products{
     background-size: cover;
     background-position: center;
     padding: 30px 0 120px;
+    background-repeat: no-repeat;
     .container{
         > .card-title{
             font-size: 45px;
             text-align: center;
+            padding-top: 25px;
             margin-bottom: 25px;
         }
         .owl-carousel{
@@ -274,14 +278,14 @@ section.the_best_american_bullies{
                                         background-size: cover;
                                         background-repeat: no-repeat;
                                         content: "";
-                                        height: 160%;
+                                        height: 190%;
                                         width: 100%;
                                         z-index: -1;
                                         left: 0;
                                         bottom: 0;
                                     }
                                     .card-title{
-                                        padding: 10px;
+                                        padding: 10px 10px 30px;
                                         color: $blanco;
                                         margin: 0;
                                     }
@@ -413,6 +417,14 @@ section.order-certificate{
 }
 section.future-products{
     background-size: cover;
+    padding: 120px 0 30px;
+    .container{
+        > .card-title{
+            color: $blanco;
+            font-size: 55px;
+        }
+    }
+
 }
 section.the_best_events{
     padding-left: 0;
@@ -423,22 +435,24 @@ section.the_best_events{
 }
 footer{
     position: relative;
-    .tag-side-span{
-        display: block;
+    .cintaTextContactanos{
         position: absolute;
-        z-index: 1;
-        color: $blanco;
         top: 50%;
-        font-size: 35px;
-        &.tag-left{
-            transform: rotate(270deg);
-            left: 0;
+        .tag-side-span{
+            display: block;
+            color: $blanco;
+            font-size: 35px;
+            &.tag-left{
+                transform: rotate(270deg);
+                left: 0;
+            }
+            &.tag-right{
+                transform: rotate(90deg);
+                right: 0;
+            }    
         }
-        &.tag-right{
-            transform: rotate(90deg);
-            right: 0;
-        }    
     }
+    
     .img-bg-footer{
         width: 100%;
         position: absolute;

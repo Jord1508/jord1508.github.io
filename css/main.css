@@ -172,53 +172,66 @@ section.whats_bulls_pedia {
 section.register_comunity .container form {
   margin: 0; }
 
-section.the_best_american_bullies {
+section.the_best_american_bullies,
+section.future-products {
   background-size: cover;
   background-position: center;
-  padding: 30px 0 120px; }
-  section.the_best_american_bullies .container > .card-title {
+  padding: 30px 0 120px;
+  background-repeat: no-repeat; }
+  section.the_best_american_bullies .container > .card-title,
+  section.future-products .container > .card-title {
     font-size: 45px;
     text-align: center;
+    padding-top: 25px;
     margin-bottom: 25px; }
-  section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item,
+  section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item {
     justify-content: center;
     display: flex;
     flex-wrap: wrap; }
-    section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+    section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card,
+    section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
       max-width: 270px;
       text-align: center; }
-      section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body {
+      section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body,
+      section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body {
         padding: 0;
         border: 4px solid #A71135 !important;
         border-radius: 29px;
         overflow: hidden; }
-        section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body img {
+        section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body img,
+        section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body img {
           width: 100%; }
-        section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div {
+        section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div,
+        section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div {
           position: relative;
           height: 100px;
           z-index: 0;
           align-content: center; }
-          section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div::before {
+          section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div::before,
+          section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div::before {
             background-image: url("../images/bestDogBG.png");
             position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
             content: "";
-            height: 160%;
+            height: 190%;
             width: 100%;
             z-index: -1;
             left: 0;
             bottom: 0; }
-          section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div .card-title {
-            padding: 10px;
+          section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div .card-title,
+          section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div .card-title {
+            padding: 10px 10px 30px;
             color: white !important;
             margin: 0; }
-      section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card > a {
+      section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card > a,
+      section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card > a {
         color: white !important;
         font-weight: 200 !important;
         margin-top: 1rem; }
-  section.the_best_american_bullies .container .owl-carousel .owl-nav {
+  section.the_best_american_bullies .container .owl-carousel .owl-nav,
+  section.future-products .container .owl-carousel .owl-nav {
     background-color: green;
     display: flex;
     flex-wrap: wrap;
@@ -227,17 +240,22 @@ section.the_best_american_bullies {
     width: 100%;
     justify-content: space-between;
     height: 0; }
-    section.the_best_american_bullies .container .owl-carousel .owl-nav button {
+    section.the_best_american_bullies .container .owl-carousel .owl-nav button,
+    section.future-products .container .owl-carousel .owl-nav button {
       background-color: yellow;
       width: 40px; }
-      section.the_best_american_bullies .container .owl-carousel .owl-nav button.disabled {
+      section.the_best_american_bullies .container .owl-carousel .owl-nav button.disabled,
+      section.future-products .container .owl-carousel .owl-nav button.disabled {
         opacity: 0;
         transition: 0.2s; }
-      section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-prev {
+      section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-prev,
+      section.future-products .container .owl-carousel .owl-nav button.owl-prev {
         margin-left: -40px; }
-      section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-next {
+      section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-next,
+      section.future-products .container .owl-carousel .owl-nav button.owl-next {
         margin-right: -40px; }
-      section.the_best_american_bullies .container .owl-carousel .owl-nav button span {
+      section.the_best_american_bullies .container .owl-carousel .owl-nav button span,
+      section.future-products .container .owl-carousel .owl-nav button span {
         font-size: 20px;
         color: white !important; }
 
@@ -309,7 +327,11 @@ section.order-certificate {
       color: transparent; }
 
 section.future-products {
-  background-size: cover; }
+  background-size: cover;
+  padding: 120px 0 30px; }
+  section.future-products .container > .card-title {
+    color: white !important;
+    font-size: 55px; }
 
 section.the_best_events {
   padding-left: 0;
@@ -319,19 +341,19 @@ section.the_best_events {
 
 footer {
   position: relative; }
-  footer .tag-side-span {
-    display: block;
+  footer .cintaTextContactanos {
     position: absolute;
-    z-index: 1;
-    color: white !important;
-    top: 50%;
-    font-size: 35px; }
-    footer .tag-side-span.tag-left {
-      transform: rotate(270deg);
-      left: 0; }
-    footer .tag-side-span.tag-right {
-      transform: rotate(90deg);
-      right: 0; }
+    top: 50%; }
+    footer .cintaTextContactanos .tag-side-span {
+      display: block;
+      color: white !important;
+      font-size: 35px; }
+      footer .cintaTextContactanos .tag-side-span.tag-left {
+        transform: rotate(270deg);
+        left: 0; }
+      footer .cintaTextContactanos .tag-side-span.tag-right {
+        transform: rotate(90deg);
+        right: 0; }
   footer .img-bg-footer {
     width: 100%;
     position: absolute;
