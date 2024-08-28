@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none !important;
+  list-style: none;
   font-family: "Roboto Condensed", sans-serif !important;
   font-optical-sizing: auto !important;
   font-weight: 400 !important;
@@ -189,6 +190,31 @@ section.whats_bulls_pedia {
 
 section.register_comunity .container form {
   margin: 0; }
+  section.register_comunity .container form h5 {
+    color: white !important;
+    font-style: italic;
+    margin-bottom: 0; }
+  section.register_comunity .container form div {
+    align-content: center; }
+    section.register_comunity .container form div input {
+      display: block;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+    section.register_comunity .container form div button {
+      color: white !important;
+      background-color: #A71135 !important;
+      width: 100%; }
 
 section.the_best_american_bullies,
 section.future-products {
@@ -310,7 +336,8 @@ section.future-products {
         color: transparent; }
 
 section.the_best_american_bullies .container > .card-title {
-  margin-bottom: 55px; }
+  margin-bottom: 55px;
+  text-shadow: 0px 0px 10px black; }
 
 section.order-certificate {
   position: relative; }
@@ -425,5 +452,10 @@ footer {
     height: 100%;
     display: block;
     z-index: -1; }
+  footer .container .LogoPrincipalFooter {
+    width: 200px;
+    margin: 0 auto; }
+    footer .container .LogoPrincipalFooter img {
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
