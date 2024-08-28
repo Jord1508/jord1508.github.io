@@ -59,13 +59,16 @@ header {
     header nav .menu-box ul {
       text-align: center; }
       header nav .menu-box ul li a {
-        color: white !important; }
+        color: white !important;
+        font-weight: 200 !important;
+        transition: 0.3s ease; }
+        header nav .menu-box ul li a:hover {
+          font-weight: 500 !important; }
     header nav .menu-box .navbar-main li a {
       font-size: 22px; }
     header nav .menu-box .navbar-login {
       padding: 0; }
       header nav .menu-box .navbar-login li {
-        box-shadow: 1px 1px 30px black;
         text-align: center; }
         header nav .menu-box .navbar-login li a {
           color: #17256B !important;
@@ -73,7 +76,11 @@ header {
           display: block;
           padding: 10px 10px 0 10px;
           position: relative;
-          margin-bottom: -10px; }
+          border-radius: 0 0 20px 20px;
+          padding-bottom: 10px;
+          margin-bottom: -23px;
+          box-shadow: 1px 1px 30px black;
+          font-size: 18px; }
           header nav .menu-box .navbar-login li a img {
             width: 70px; }
           header nav .menu-box .navbar-login li a span {
@@ -82,16 +89,6 @@ header {
             font-optical-sizing: auto !important;
             font-weight: 900 !important;
             font-style: normal; }
-          header nav .menu-box .navbar-login li a ::after {
-            content: "";
-            background-color: white !important;
-            display: block;
-            width: 100%;
-            height: 20px;
-            position: absolute;
-            border-radius: 0 0 17px 17px;
-            left: 0;
-            bottom: -15px; }
 
 section.baner-principal {
   background-image: url("../images/main-img-banner-1.png");
@@ -109,16 +106,28 @@ section.baner-principal {
         border-color: #B2965F !important;
         border: 2px solid;
         color: white !important;
-        font-weight: bold;
+        font-weight: bold !important;
         font-size: 25px;
         border-radius: 16px;
         padding: 8px 17px; }
         section.baner-principal .container .card-body .btn span {
           display: inline-block;
-          width: 30px; }
+          width: 39px;
+          vertical-align: middle;
+          margin-top: -12px;
+          margin-left: 9px; }
           section.baner-principal .container .card-body .btn span img {
             width: 100%;
             vertical-align: inherit; }
+        section.baner-principal .container .card-body .btn::after {
+          content: "";
+          background-image: url("../images/arrow-right-white.png");
+          background-position: center;
+          background-size: cover;
+          display: inline-block;
+          width: 14px;
+          height: 19px;
+          margin-left: 12px; }
 
 section.n_views {
   background-image: url("../images/red-cinta8202024.png");
@@ -149,12 +158,15 @@ section.about_us {
   background-position: right center; }
   section.about_us .container {
     background: none; }
-    section.about_us .container .row div div .card-title {
-      font-size: 45px;
-      font-weight: bolder; }
-      @media screen and (min-width: 768px) {
-        section.about_us .container .row div div .card-title {
-          font-size: 65px; } }
+    section.about_us .container .row div {
+      align-content: center; }
+      section.about_us .container .row div div .card-title {
+        font-size: 45px;
+        font-weight: bolder; }
+        @media screen and (min-width: 768px) {
+          section.about_us .container .row div div .card-title {
+            font-size: 95px;
+            line-height: 76px; } }
 
 section.whats_bulls_pedia {
   background-size: cover;
@@ -162,12 +174,18 @@ section.whats_bulls_pedia {
   background-position: left center; }
   section.whats_bulls_pedia .container {
     background: none; }
-    section.whats_bulls_pedia .container .row div div .card-title {
-      font-size: 45px;
-      font-weight: bolder; }
-      @media screen and (min-width: 768px) {
-        section.whats_bulls_pedia .container .row div div .card-title {
-          font-size: 65px; } }
+    section.whats_bulls_pedia .container .row div {
+      align-content: center; }
+      section.whats_bulls_pedia .container .row div div .card-title {
+        font-size: 45px;
+        font-weight: bolder;
+        font-size: 55px; }
+        @media screen and (min-width: 768px) {
+          section.whats_bulls_pedia .container .row div div .card-title {
+            font-size: 95px;
+            line-height: 76px; } }
+        section.whats_bulls_pedia .container .row div div .card-title span {
+          font-size: 95px; }
 
 section.register_comunity .container form {
   margin: 0; }
@@ -241,8 +259,9 @@ section.future-products {
     height: 0; }
     section.the_best_american_bullies .container .owl-carousel .owl-nav button,
     section.future-products .container .owl-carousel .owl-nav button {
-      background-color: yellow;
-      width: 40px; }
+      width: 40px;
+      height: 53px;
+      position: relative; }
       section.the_best_american_bullies .container .owl-carousel .owl-nav button.disabled,
       section.future-products .container .owl-carousel .owl-nav button.disabled {
         opacity: 0;
@@ -250,13 +269,45 @@ section.future-products {
       section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-prev,
       section.future-products .container .owl-carousel .owl-nav button.owl-prev {
         margin-left: -40px; }
+        @media screen and (max-width: 768px) {
+          section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-prev,
+          section.future-products .container .owl-carousel .owl-nav button.owl-prev {
+            margin-left: 0 !important; } }
+        section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-prev::after,
+        section.future-products .container .owl-carousel .owl-nav button.owl-prev::after {
+          content: "";
+          background-image: url("../images/arrow-left.png");
+          background-position: center;
+          background-size: cover;
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0; }
       section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-next,
       section.future-products .container .owl-carousel .owl-nav button.owl-next {
         margin-right: -40px; }
+        @media screen and (max-width: 768px) {
+          section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-next,
+          section.future-products .container .owl-carousel .owl-nav button.owl-next {
+            margin-right: 0 !important; } }
+        section.the_best_american_bullies .container .owl-carousel .owl-nav button.owl-next::after,
+        section.future-products .container .owl-carousel .owl-nav button.owl-next::after {
+          content: "";
+          background-image: url("../images/arrow-right.png");
+          background-position: center;
+          background-size: cover;
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0; }
       section.the_best_american_bullies .container .owl-carousel .owl-nav button span,
       section.future-products .container .owl-carousel .owl-nav button span {
         font-size: 20px;
-        color: white !important; }
+        color: transparent; }
 
 section.the_best_american_bullies .container > .card-title {
   margin-bottom: 55px; }
@@ -322,6 +373,16 @@ section.order-certificate {
       margin-top: 10px;
       font-size: 25px;
       font-weight: 600 !important; }
+      section.order-certificate .container .right .card-body .btnCertificate::after {
+        content: "";
+        background-image: url("../images/arrow-right-white.png");
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        width: 22px;
+        height: 30px;
+        margin-left: 12px;
+        margin-bottom: -6px; }
     section.order-certificate .container .right .card-body .lineaDivisora {
       display: block;
       background-image: url("../images/lineaDivisora.png");

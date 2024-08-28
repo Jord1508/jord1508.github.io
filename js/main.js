@@ -34,13 +34,34 @@ $(document).ready(function(){
   }
 
   $(".CarouselAmericanBullies").owlCarousel({
-    items: 3,
-    margin: 10,
+    responsive : {
+      0:{
+        items: 1
+      },
+      576:{
+        items: 2
+      },
+      768:{
+        items: 3
+      }
+    },
+    margin: 15,
     nav: true,
     dots : false
   });
   $(".CarouselFutureProducts").owlCarousel({
-    items: 3,
+    responsive : {
+      0:{
+        items: 1
+      },
+      576:{
+        items: 2
+      },
+      768:{
+        items: 3
+      }
+    },
+    margin: 15,
     nav: true,
     dots : false
   })
