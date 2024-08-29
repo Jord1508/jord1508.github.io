@@ -20,6 +20,7 @@ $negro : black;
 h1,h2,h3,h4,h5,h6{
     @include font-face(900);
     color: $rojo;
+    line-height: 1;
     span{
         @include font-face(900);
         
@@ -175,6 +176,7 @@ section.baner-principal{
         }
     }
 }
+
 section.n_views{
     background-image: url("../images/red-cinta8202024.png");
     background-size: cover;
@@ -214,6 +216,9 @@ section.about_us{
     background-attachment: fixed;
     height: 100vh;
     align-content: center;
+    @media screen and (max-width:768px) {
+        background-position-x: 40%;
+    }
     .container{
         background: none;
         .row{
@@ -236,6 +241,9 @@ section.whats_bulls_pedia{
     background-attachment: fixed;
     height: 100vh;
     align-content: center;
+    @media screen and (max-width: 768px) {
+        background-position-x: 60%;
+    }
     .container{
         background: none;
         .row{
@@ -299,6 +307,7 @@ section.future-products{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    align-content: center;
     .container{
         > .card-title{
             font-size: 45px;
