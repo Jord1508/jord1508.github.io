@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   font-optical-sizing: auto !important;
   font-weight: 900 !important;
   font-style: normal;
-  color: #A71135 !important;
+  color: #A71135;
   line-height: 1; }
   h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     font-family: "Roboto Condensed", sans-serif !important;
@@ -41,11 +41,24 @@ h1, h2, h3, h4, h5, h6 {
 .v-one .card-title {
   color: #A71135; }
   .v-one .card-title span {
-    color: white !important;
+    color: white;
     display: block; }
 .v-one .card-text {
-  color: white !important; }
+  color: white; }
 
+html {
+  scroll-behavior: smooth; }
+
+@keyframes shadowBoxAnimated {
+  0% {
+    box-shadow: 1px 1px 30px black;
+    color: #17256B !important; }
+  50% {
+    box-shadow: 1px 1px 30px #17256B;
+    color: #A71135 !important; }
+  100% {
+    box-shadow: 1px 1px 30px black;
+    color: #17256B !important; } }
 header {
   background-image: url("../images/bg-main-menu-nav.png");
   background-position: center;
@@ -58,23 +71,23 @@ header {
       width: 130px; }
       header nav .navbar-brand img {
         width: 100%; }
-    header nav .menu-box ul {
+    header nav .menu-box .navbar-main {
       text-align: center; }
-      header nav .menu-box ul li a {
+      header nav .menu-box .navbar-main li a {
         color: white !important;
         font-weight: 200 !important;
-        transition: 0.3s ease; }
-        header nav .menu-box ul li a:hover {
-          font-weight: 500 !important; }
-    header nav .menu-box .navbar-main li a {
-      font-size: 22px; }
+        transition: 0.3s ease;
+        font-size: 22px; }
+        header nav .menu-box .navbar-main li a:hover {
+          font-weight: 500 !important;
+          box-shadow: 10px 1px 3px black; }
     header nav .menu-box .navbar-login {
       padding: 0; }
       header nav .menu-box .navbar-login li {
         text-align: center; }
         header nav .menu-box .navbar-login li a {
           color: #17256B !important;
-          background-color: white !important;
+          background-color: white;
           display: block;
           padding: 10px 10px 0 10px;
           position: relative;
@@ -91,6 +104,12 @@ header {
             font-optical-sizing: auto !important;
             font-weight: 900 !important;
             font-style: normal; }
+          header nav .menu-box .navbar-login li a:hover {
+            animation: shadowBoxAnimated 2s infinite; }
+    header nav .menu-box .navbar-redesSociales li a {
+      display: block;
+      width: 30px;
+      padding: 0 !important; }
 
 section.baner-principal {
   background-image: url("../images/main-img-banner-1.png");
@@ -105,10 +124,10 @@ section.baner-principal {
         font-size: 60px;
         line-height: 1; }
       section.baner-principal .container .card-body .btn {
-        background-color: #17256B !important;
+        background-color: #17256B;
         border-color: #B2965F !important;
         border: 2px solid;
-        color: white !important;
+        color: white;
         font-weight: bold !important;
         font-size: 25px;
         border-radius: 16px;
@@ -140,7 +159,7 @@ section.n_views {
     padding-top: 2rem;
     padding-bottom: 2rem; }
     section.n_views .container .row p {
-      color: white !important;
+      color: white;
       margin: 0;
       font-family: "Roboto Condensed", sans-serif !important;
       font-optical-sizing: auto !important;
@@ -162,7 +181,7 @@ section.about_us {
   background-attachment: fixed;
   height: 100vh;
   align-content: center; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.about_us {
       background-position-x: 40%; } }
   section.about_us .container {
@@ -184,7 +203,7 @@ section.whats_bulls_pedia {
   background-attachment: fixed;
   height: 100vh;
   align-content: center; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     section.whats_bulls_pedia {
       background-position-x: 60%; } }
   section.whats_bulls_pedia .container {
@@ -203,18 +222,22 @@ section.whats_bulls_pedia {
           font-size: 95px; }
 
 section.register_comunity .container form {
-  margin: 0; }
+  margin: 0;
+  justify-content: center; }
   section.register_comunity .container form h5 {
-    color: white !important;
+    color: white;
     font-style: italic;
     margin-bottom: 0; }
+    @media screen and (max-width: 1023px) {
+      section.register_comunity .container form h5 {
+        text-align: center;
+        margin-bottom: 1rem; } }
   section.register_comunity .container form div {
     align-content: center; }
     section.register_comunity .container form div input {
       display: block;
       padding: .375rem .75rem;
       font-size: 1rem;
-      font-weight: 400;
       line-height: 1.5;
       color: #212529;
       background-color: #fff;
@@ -224,10 +247,14 @@ section.register_comunity .container form {
       -moz-appearance: none;
       appearance: none;
       border-radius: .25rem;
+      width: 100%;
       transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+      @media screen and (max-width: 1023px) {
+        section.register_comunity .container form div input {
+          margin-bottom: 1rem; } }
     section.register_comunity .container form div button {
-      color: white !important;
-      background-color: #A71135 !important;
+      color: white;
+      background-color: #A71135;
       width: 100%; }
 
 section.the_best_american_bullies,
@@ -256,7 +283,7 @@ section.future-products {
       section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body,
       section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body {
         padding: 0;
-        border: 4px solid #A71135 !important;
+        border: 4px solid #A71135;
         border-radius: 29px;
         overflow: hidden; }
         section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body img,
@@ -283,11 +310,11 @@ section.future-products {
           section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div .card-title,
           section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-body div .card-title {
             padding: 10px 10px 30px;
-            color: white !important;
+            color: white;
             margin: 0; }
       section.the_best_american_bullies .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card > a,
       section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card > a {
-        color: white !important;
+        color: white;
         font-weight: 200 !important;
         margin-top: 1rem; }
   section.the_best_american_bullies .container .owl-carousel .owl-nav,
@@ -385,19 +412,19 @@ section.order-certificate {
     margin-bottom: -46px;
     border-radius: 25px; }
     section.order-certificate .container .right .card-body .card-title {
-      color: #A71135 !important;
+      color: #A71135;
       font-style: italic;
       font-size: 35px; }
       section.order-certificate .container .right .card-body .card-title span {
         display: block;
-        color: #17256B !important;
+        color: #17256B;
         font-size: 55px; }
     section.order-certificate .container .right .card-body .card-text {
       width: 300px;
       margin-left: auto;
       margin-right: auto; }
       section.order-certificate .container .right .card-body .card-text.textBlue {
-        color: #17256B !important;
+        color: #17256B;
         font-size: 20px;
         max-width: 200px;
         line-height: 17px;
@@ -410,7 +437,7 @@ section.order-certificate {
       background-repeat: no-repeat;
       display: inline-block;
       padding: 7px 20px 5px;
-      color: white !important;
+      color: white;
       box-shadow: 1px 1px 10px black;
       border-radius: 10px;
       margin-bottom: 35px;
@@ -437,7 +464,7 @@ section.future-products {
   background-size: cover;
   padding: 120px 0 30px; }
   section.future-products .container > .card-title {
-    color: white !important;
+    color: white;
     font-size: 55px; }
 
 section.the_best_events {
@@ -453,7 +480,7 @@ footer {
     top: 50%; }
     footer .cintaTextContactanos .tag-side-span {
       display: block;
-      color: white !important;
+      color: white;
       font-size: 35px; }
       footer .cintaTextContactanos .tag-side-span.tag-left {
         transform: rotate(270deg);
@@ -484,21 +511,26 @@ footer {
         footer .container .MenuNavFooterBox ul.menuNavFooter li a {
           display: block;
           padding: 5px 15px;
-          color: #A71135 !important;
+          color: #A71135;
           transition: 0.3s; }
           footer .container .MenuNavFooterBox ul.menuNavFooter li a:hover {
             font-weight: 800 !important; }
       footer .container .MenuNavFooterBox ul.socialNavFooter li {
         display: inline-block; }
+        footer .container .MenuNavFooterBox ul.socialNavFooter li a {
+          color: white;
+          font-size: 18px;
+          display: block;
+          width: 20px; }
       footer .container .MenuNavFooterBox ul.contactNavFooter li {
-        color: white !important; }
+        color: white; }
         footer .container .MenuNavFooterBox ul.contactNavFooter li.mailFooter a {
           font-size: 22px; }
         footer .container .MenuNavFooterBox ul.contactNavFooter li.telFoote a {
           font-size: 14px; }
         footer .container .MenuNavFooterBox ul.contactNavFooter li a {
           font-style: italic;
-          color: white !important;
+          color: white;
           display: inline-block;
           padding: 3px 2px; }
 
