@@ -71,16 +71,47 @@ header {
       width: 130px; }
       header nav .navbar-brand img {
         width: 100%; }
+    header nav .menu-box .BtnCloseMenuNav {
+      position: absolute;
+      right: 3rem;
+      top: 2rem;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border: 1px solid white;
+      line-height: 30px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      border-radius: 50%; }
     header nav .menu-box .navbar-main {
       text-align: center; }
       header nav .menu-box .navbar-main li a {
         color: white !important;
         font-weight: 200 !important;
         transition: 0.3s ease;
-        font-size: 22px; }
+        font-size: 22px;
+        text-shadow: 1px 1px 4px black; }
         header nav .menu-box .navbar-main li a:hover {
-          font-weight: 500 !important;
-          box-shadow: 10px 1px 3px black; }
+          font-weight: 500 !important; }
+          header nav .menu-box .navbar-main li a:hover::after {
+            background-position: 50% 100%; }
+        header nav .menu-box .navbar-main li a::after {
+          content: "";
+          display: block;
+          transition: 0.3s ease;
+          width: 20px;
+          height: 20px;
+          background-image: url("../images/arrow-white-down.png");
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          margin: 0 auto; }
+          @media screen and (max-width: 991px) {
+            header nav .menu-box .navbar-main li a::after {
+              display: none; } }
+      @media screen and (max-width: 991px) {
+        header nav .menu-box .navbar-main {
+          width: 100%; } }
     header nav .menu-box .navbar-login {
       padding: 0; }
       header nav .menu-box .navbar-login li {
@@ -98,6 +129,9 @@ header {
           font-size: 18px; }
           header nav .menu-box .navbar-login li a img {
             width: 70px; }
+            @media screen and (max-width: 991px) {
+              header nav .menu-box .navbar-login li a img {
+                width: 100%; } }
           header nav .menu-box .navbar-login li a span {
             display: block;
             font-family: "Roboto Condensed", sans-serif !important;
@@ -106,10 +140,50 @@ header {
             font-style: normal; }
           header nav .menu-box .navbar-login li a:hover {
             animation: shadowBoxAnimated 2s infinite; }
+          @media screen and (max-width: 991px) {
+            header nav .menu-box .navbar-login li a {
+              margin-bottom: 0; } }
+      @media screen and (max-width: 991px) {
+        header nav .menu-box .navbar-login {
+          margin: 0 auto;
+          position: fixed;
+          top: 0;
+          right: 23%;
+          width: 80px; } }
     header nav .menu-box .navbar-redesSociales li a {
       display: block;
       width: 30px;
       padding: 0 !important; }
+      header nav .menu-box .navbar-redesSociales li a img {
+        width: 100%; }
+    @media screen and (max-width: 991px) {
+      header nav .menu-box .navbar-redesSociales {
+        flex-direction: row;
+        margin: 2rem auto 0;
+        width: 100%;
+        justify-content: center; } }
+    @media screen and (max-width: 991px) {
+      header nav .menu-box {
+        position: fixed;
+        left: -2000px;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: block !important;
+        transition: 0.3s linear; }
+        header nav .menu-box.active {
+          left: 0;
+          padding-top: 6rem; } }
+  @media screen and (max-width: 991px) {
+    header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important; } }
 
 section.baner-principal {
   background-image: url("../images/main-img-banner-1.png");
@@ -150,6 +224,9 @@ section.baner-principal {
           width: 14px;
           height: 19px;
           margin-left: 12px; }
+  @media screen and (max-width: 991px) {
+    section.baner-principal {
+      margin-top: 64px; } }
 
 section.n_views {
   background-image: url("../images/red-cinta8202024.png");
@@ -501,7 +578,7 @@ footer {
     footer .container .LogoPrincipalFooter {
       max-width: 320px;
       margin: 0 auto;
-      padding: 20px 0; }
+      padding: 30px 0; }
       footer .container .LogoPrincipalFooter img {
         width: 100%; }
     footer .container .MenuNavFooterBox {
@@ -512,16 +589,30 @@ footer {
           display: block;
           padding: 5px 15px;
           color: #A71135;
-          transition: 0.3s; }
+          transition: 0.3s;
+          text-shadow: 1px 1px 3px black;
+          font-size: 20px;
+          margin-top: 1rem; }
           footer .container .MenuNavFooterBox ul.menuNavFooter li a:hover {
             font-weight: 800 !important; }
+          footer .container .MenuNavFooterBox ul.menuNavFooter li a::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-top: 15px solid #A71135;
+            border-right: 10px solid transparent;
+            margin: 0 auto; }
       footer .container .MenuNavFooterBox ul.socialNavFooter li {
         display: inline-block; }
         footer .container .MenuNavFooterBox ul.socialNavFooter li a {
           color: white;
           font-size: 18px;
           display: block;
-          width: 20px; }
+          width: 40px; }
+          footer .container .MenuNavFooterBox ul.socialNavFooter li a img {
+            width: 100%; }
       footer .container .MenuNavFooterBox ul.contactNavFooter li {
         color: white; }
         footer .container .MenuNavFooterBox ul.contactNavFooter li.mailFooter a {

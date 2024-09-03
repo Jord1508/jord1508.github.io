@@ -23,6 +23,9 @@ function Contador(selector){
 
   
 $(document).ready(function(){
+
+  const ContainerMenu = $('.menu-box');
+  const ContainerLoginMenu = $('.navbar-login');
   let boxContainerViews = document.getElementById('boxNumberOfViews').offsetHeight;
   let heightScreen = window.innerHeight;
   heightScreen = (heightScreen - heightScreen) + (boxContainerViews / 2 )
@@ -70,24 +73,36 @@ $(document).ready(function(){
   // Add smooth scrolling to all links
   $(".navbar-main > .nav-item > a.nav-link").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
+    ContainerMenu.removeClass('active'); //Esconder el menuNav principal
+    ContainerLoginMenu.show(); //Esconder el elemento Login del menuNav
+
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
+
+
+  $(".navbar-toggler").on('click',function(){
+    if(ContainerMenu.hasClass('active')){
+      ContainerMenu.removeClass('active');
+    }else{
+      ContainerMenu.addClass('active');
+      ContainerLoginMenu.hide();
+    }
+  })
+
+  $(".BtnCloseMenuNav").on('click',function(){
+    ContainerLoginMenu.show();
+    ContainerMenu.removeClass('active');
+  })
+
+  
 
 });
