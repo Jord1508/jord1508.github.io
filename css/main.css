@@ -298,7 +298,7 @@ section.about_us {
         font-weight: bolder; }
         @media screen and (min-width: 768px) {
           section.about_us .container .row div div .card-title {
-            font-size: 95px;
+            font-size: 75px;
             line-height: 76px; } }
 
 section.whats_bulls_pedia {
@@ -325,7 +325,7 @@ section.whats_bulls_pedia {
         font-size: 55px; }
         @media screen and (min-width: 768px) {
           section.whats_bulls_pedia .container .row div div .card-title {
-            font-size: 95px;
+            font-size: 75px;
             line-height: 76px; } }
         section.whats_bulls_pedia .container .row div div .card-title span {
           font-size: 95px; }
@@ -504,23 +504,26 @@ section.order-certificate {
     display: block;
     z-index: -1; }
   section.order-certificate .container .left {
-    align-content: center; }
-    section.order-certificate .container .left .card-body .card-title, section.order-certificate .container .left .card-body span {
-      font-size: 45px;
-      font-style: italic;
-      line-height: 1; }
-    @media screen and (max-width: 767px) {
-      section.order-certificate .container .left .card-body .card-title {
-        padding: 2rem 0 0;
-        text-align: center; } }
-    section.order-certificate .container .left .card-body .card-text {
-      font-size: 22px; }
+    align-content: center;
+    padding-left: 0; }
+    section.order-certificate .container .left .card-body {
+      padding-left: 0; }
+      section.order-certificate .container .left .card-body .card-title, section.order-certificate .container .left .card-body span {
+        font-size: 45px;
+        font-style: italic;
+        line-height: 1; }
       @media screen and (max-width: 767px) {
-        section.order-certificate .container .left .card-body .card-text {
+        section.order-certificate .container .left .card-body .card-title {
+          padding: 2rem 0 0;
           text-align: center; } }
-    @media screen and (max-width: 768px) {
-      section.order-certificate .container .left .card-body {
-        padding: 0; } }
+      section.order-certificate .container .left .card-body .card-text {
+        font-size: 22px; }
+        @media screen and (max-width: 767px) {
+          section.order-certificate .container .left .card-body .card-text {
+            text-align: center; } }
+      @media screen and (max-width: 768px) {
+        section.order-certificate .container .left .card-body {
+          padding: 0; } }
     @media screen and (max-width: 768px) {
       section.order-certificate .container .left {
         padding: 0; } }
@@ -577,7 +580,7 @@ section.order-certificate {
         height: 30px;
         margin-left: 12px;
         margin-bottom: -6px; }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         section.order-certificate .container .right .card-body .btnCertificate {
           width: 85%;
           border-radius: 20px; } }
