@@ -84,6 +84,9 @@ header {
       color: white;
       font-size: 20px;
       border-radius: 50%; }
+      @media screen and (min-width: 992px) {
+        header nav .menu-box .BtnCloseMenuNav {
+          display: none; } }
     header nav .menu-box .navbar-main {
       text-align: center; }
       header nav .menu-box .navbar-main li a {
@@ -189,7 +192,8 @@ section.baner-principal {
   background-image: url("../images/main-img-banner-1.png");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 100vh; }
   section.baner-principal .container {
     padding: 4rem 0; }
     section.baner-principal .container .card-body {

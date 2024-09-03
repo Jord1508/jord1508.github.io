@@ -107,6 +107,9 @@ header{
                 color: white;
                 font-size: 20px;
                 border-radius: 50%;
+                @media screen and (min-width: 992px) {
+                    display: none;
+                }
             }
             .navbar-main{
                 text-align: center;
@@ -239,6 +242,7 @@ section.baner-principal{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
     .container{
         padding: 4rem 0;
         .card-body{
