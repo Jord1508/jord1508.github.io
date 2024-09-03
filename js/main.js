@@ -40,34 +40,43 @@ $(document).ready(function(){
   $(".CarouselAmericanBullies").owlCarousel({
     responsive : {
       0:{
-        items: 1
+        items: 1,
+        dots : true,
+        nav: false
       },
       576:{
-        items: 2
+        items: 2,
+        dots : true,
+        nav: false
       },
       768:{
-        items: 3
+        items: 3,
+        nav: true,
+        dots : false
       }
     },
-    margin: 15,
-    nav: true,
-    dots : false
+    margin: 15
   });
+
   $(".CarouselFutureProducts").owlCarousel({
     responsive : {
       0:{
-        items: 1
+        items: 1,
+        dots : true,
+        nav: false
       },
       576:{
-        items: 2
+        items: 2,
+        dots : true,
+        nav: false
       },
       768:{
-        items: 3
+        items: 3,
+        nav: true,
+        dots : false
       }
     },
-    margin: 15,
-    nav: true,
-    dots : false
+    margin: 15
   });
 
   // Add smooth scrolling to all links

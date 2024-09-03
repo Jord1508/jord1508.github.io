@@ -188,6 +188,28 @@ header {
       padding-top: 10px !important;
       padding-bottom: 10px !important; } }
 
+.owl-dots {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem; }
+  .owl-dots .owl-dot {
+    display: block;
+    background: #A71135 !important;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s ease;
+    margin: 0 5px;
+    border-radius: 10px;
+    padding-top: 1rem;
+    border: 2px solid white !important; }
+    .owl-dots .owl-dot.active {
+      width: 30px; }
+
+@media screen and (max-width: 992px) {
+  .owl-carousel .owl-nav.disabled {
+    display: none !important; } }
 section.baner-principal {
   background-image: url("../images/main-img-banner-1.png");
   background-position: center;
@@ -231,7 +253,8 @@ section.baner-principal {
           margin-left: 12px; }
   @media screen and (max-width: 991px) {
     section.baner-principal {
-      margin-top: 64px; } }
+      margin-top: 64px;
+      background-position-x: 60%; } }
 
 section.n_views {
   background-image: url("../images/red-cinta8202024.png");
@@ -290,8 +313,12 @@ section.whats_bulls_pedia {
       background-position-x: 60%; } }
   section.whats_bulls_pedia .container {
     background: none; }
-    section.whats_bulls_pedia .container .row div {
-      align-content: center; }
+    section.whats_bulls_pedia .container .row {
+      flex-direction: row-reverse; }
+      @media screen and (max-width: 768px) {
+        section.whats_bulls_pedia .container .row div {
+          align-content: center;
+          padding: 0 0 2rem; } }
       section.whats_bulls_pedia .container .row div div .card-title {
         font-size: 45px;
         font-weight: bolder;
@@ -313,7 +340,8 @@ section.register_comunity .container form {
     @media screen and (max-width: 1023px) {
       section.register_comunity .container form h5 {
         text-align: center;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        font-size: 30px; } }
   section.register_comunity .container form div {
     align-content: center; }
     section.register_comunity .container form div input {
@@ -398,10 +426,10 @@ section.future-products {
       section.future-products .container .owl-carousel .owl-stage-outer .owl-stage .owl-item .card > a {
         color: white;
         font-weight: 200 !important;
-        margin-top: 1rem; }
+        margin-top: 1rem;
+        text-shadow: 1px 1px 3px black; }
   section.the_best_american_bullies .container .owl-carousel .owl-nav,
   section.future-products .container .owl-carousel .owl-nav {
-    background-color: green;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -481,8 +509,21 @@ section.order-certificate {
       font-size: 45px;
       font-style: italic;
       line-height: 1; }
+    @media screen and (max-width: 767px) {
+      section.order-certificate .container .left .card-body .card-title {
+        padding: 2rem 0 0;
+        text-align: center; } }
     section.order-certificate .container .left .card-body .card-text {
       font-size: 22px; }
+      @media screen and (max-width: 767px) {
+        section.order-certificate .container .left .card-body .card-text {
+          text-align: center; } }
+    @media screen and (max-width: 768px) {
+      section.order-certificate .container .left .card-body {
+        padding: 0; } }
+    @media screen and (max-width: 768px) {
+      section.order-certificate .container .left {
+        padding: 0; } }
   section.order-certificate .container .right .card-body {
     background-image: url("../images/mosaico-bg.png");
     text-align: center;
@@ -536,11 +577,22 @@ section.order-certificate {
         height: 30px;
         margin-left: 12px;
         margin-bottom: -6px; }
+      @media screen and (max-width: 767px) {
+        section.order-certificate .container .right .card-body .btnCertificate {
+          width: 85%;
+          border-radius: 20px; } }
     section.order-certificate .container .right .card-body .lineaDivisora {
       display: block;
       background-image: url("../images/lineaDivisora.png");
       background-size: cover;
       color: transparent; }
+    @media screen and (max-width: 767px) {
+      section.order-certificate .container .right .card-body {
+        margin-top: 0;
+        margin-bottom: 50px; } }
+  @media screen and (max-width: 768px) {
+    section.order-certificate .container .right {
+      padding: 1rem 0 0; } }
 
 section.future-products {
   background-size: cover;
