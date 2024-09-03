@@ -193,7 +193,8 @@ section.baner-principal {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; }
+  height: 100vh;
+  align-content: center; }
   section.baner-principal .container {
     padding: 4rem 0; }
     section.baner-principal .container .card-body {
