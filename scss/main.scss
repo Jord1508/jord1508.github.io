@@ -781,6 +781,7 @@ footer{
         .MenuNavFooterBox{
             text-align: center;
             ul.menuNavFooter{
+                margin-bottom: 1rem;
                 li{
                     display: inline-block;
                     a{
@@ -792,7 +793,10 @@ footer{
                         font-size: 20px;
                         margin-top: 1rem;
                         &:hover{
-                            font-weight: 800!important;
+                            color: $blanco;
+                            &::after{
+                                border-top: 15px solid $blanco;
+                            }
                         }
                         &::after{
                             content: "";
@@ -800,9 +804,10 @@ footer{
                             width: 0;
                             height: 0;
                             border-left: 10px solid transparent;
-                            border-top: 15px solid #A71135;
+                            border-top: 15px solid $rojo;
                             border-right: 10px solid transparent;
                             margin: 0 auto;
+                            transition: 0.3s;
                         }
                     }
                 }
