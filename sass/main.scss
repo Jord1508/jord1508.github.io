@@ -1,0 +1,244 @@
+@import "variables.scss";
+
+*{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    color: $black_b;
+}
+
+a{
+    color: $morado_a;
+    font-size: clamp(15px, 1.5vw, 18px);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $black_a;
+}
+header,footer{
+    display: block;
+    padding: 20px 0;
+}
+h1 {
+    font-size: clamp(20px, 3vw, 4rem);
+}
+p {
+    margin-bottom: 1rem;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section {
+    margin: 20px 0;    
+}
+
+h2 {
+    color: $blanco100;
+    border-bottom: 2px solid $morado_a;
+    padding-bottom: .25rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;    
+}
+
+section {
+    margin-top: 4rem;
+    > h2{
+        min-width: 160px;
+        position: relative;
+        top: 50%;
+        left: calc(50% - 80px);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    h3{
+        color: $blanco;
+    }
+    ul {
+        li {
+            background: $black_b;
+            color: $blanco;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+section.BanerPrincipal{
+    margin: 0;
+    position: relative;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-color: $blanco;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0,0,0,0.43);
+        top: 0;
+        left: 0;
+    }
+    .container{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: end;
+        
+        h1,p{ 
+            color: $blanco100;
+            text-shadow: 0 0 10px $black_b,0 0 15px black,0 0 30px rgba(0,0,0,0.9);
+        }
+        p{
+            color: $morado_a;
+        }
+        
+    }
+    img{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+    
+}
+section.SectionSkills{
+    .container{
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:10px;
+            padding-top: 1rem;
+            justify-content: center;
+            li{
+                margin: 0;
+                border-radius:18px;
+                color: $blanco;
+                background-color: $black_b
+            }
+            
+        }
+    }
+}
+section.SectionAbout{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .subContainer{
+            display:inline-block;
+            width: max(50%,320px);
+            p{
+                @media (width < 768px) {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+section.SectionExperiencia{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media (width < 780px) {
+            justify-content: center;
+        }
+        
+        .cardWork{
+            width: max(340px,calc(50% - 50px));
+            border: 1px solid $black_b;
+            padding: 1rem;
+            border-radius: 10px;
+            position: relative;
+            padding-bottom: 3rem;
+            margin-bottom: 1rem;
+            h3{
+                font-size: 24px;
+            }
+            h4{
+                color: $morado_a;
+                font-size: 18px;
+                margin-bottom: 1rem;
+                span{
+                    color: $morado_a;
+                    font-size: 20px;
+                }
+            }
+            ul.proyectsWorked{
+                padding-top: 10px;
+                li{
+                    display: inline-block;
+                    margin:0 0 10px;
+                }
+            }
+            ul.timeLineBox{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                li{
+                    display: inline-block;
+                    background-color: transparent;
+                    color: $morado_a;
+                    margin: 0;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+section.SectionEducacion{
+    .container{
+        ul{
+            li{
+                background-color: transparent;
+                text-align: center;
+                span{
+                    color: $morado_a;
+
+                }
+            }
+        }
+    }
+}
+section.SectionContact{
+    .container{  
+        text-align: center;
+        a{
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: $morado_a;
+            color: $blanco;
+            text-decoration: none;
+            border-radius: 5px;
+            &:hover{
+                color: $blanco100;
+                transition: .3s ease;
+            }
+        }
+    }
+}
+
+@import "mixing.scss";
+@import 'sections/header.scss';
+@import 'sections/footer.scss';
