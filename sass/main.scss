@@ -101,7 +101,7 @@ section.BanerPrincipal{
             text-shadow: 0 0 10px $black_b,0 0 15px black,0 0 30px rgba(0,0,0,0.9);
         }
         p{
-            color: $morado_a;
+            color: $blanco100;
         }
         
     }
@@ -141,6 +141,13 @@ section.SectionAbout{
         .subContainer{
             display:inline-block;
             width: max(50%,320px);
+            img{
+                
+                width: 320px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 50%;
+            }
             p{
                 @media (width < 768px) {
                     text-align: justify;
@@ -248,6 +255,10 @@ section.SectionExperiencia{
 
                 li{
                     background-color: transparent;
+                    padding: 0 10px 0 0;
+                    img{
+                        width: 20px;
+                    }
                 }
             }
             ul.timeLineBox{
