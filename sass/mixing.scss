@@ -1,1 +1,7 @@
-
+// animaciones
+@keyframes arrowBtnhover {
+    100%{
+        transform: translate(5px, -5px);
+        opacity: 1;
+    }
+}
