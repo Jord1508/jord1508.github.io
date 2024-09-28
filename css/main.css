@@ -22,7 +22,7 @@ header, footer {
   padding: 20px 0; }
 
 h1 {
-  font-size: clamp(20px, 3vw, 4rem); }
+  font-size: clamp(25px, 3vw, 4rem); }
 
 p {
   margin-bottom: 1rem; }
@@ -36,7 +36,13 @@ p {
 section {
   margin: 20px 0; }
 
-.iconGithub::before {
+.iconMail {
+  filter: brightness(3);
+  width: 25px;
+  display: inline-block;
+  margin-bottom: -6px; }
+
+.BtnIconGithub::before {
   content: "";
   display: inline-block;
   height: 20px;
@@ -134,10 +140,12 @@ section.SectionAbout .container {
       margin: 0 auto;
       border-radius: 50%; }
     section.SectionAbout .container .subContainer p {
-      color: #ddd; }
+      color: #ddd;
+      padding: 0 1rem; }
       @media (width < 768px) {
         section.SectionAbout .container .subContainer p {
           margin-top: 2rem;
+          padding: 0;
           text-align: justify; } }
 
 section.SectionExperiencia .container {
@@ -216,7 +224,8 @@ section.SectionExperiencia .container {
       justify-content: end; }
       section.SectionExperiencia .container .cardWork ul.tecnologyUsed li {
         background-color: transparent;
-        padding: 0 10px 0 0; }
+        padding: 0 0 0 10px;
+        display: flex; }
         section.SectionExperiencia .container .cardWork ul.tecnologyUsed li img {
           width: 20px; }
     section.SectionExperiencia .container .cardWork ul.timeLineBox {
@@ -275,6 +284,8 @@ header nav {
       transition: 0.3s ease; }
       header nav ul li > a:hover {
         color: #7B4AE2; }
+  header nav ul.IconContactNav li a img {
+    margin-right: 5px; }
 
 footer p {
   color: white;

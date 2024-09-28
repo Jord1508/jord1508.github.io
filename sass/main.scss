@@ -25,7 +25,7 @@ header,footer{
     padding: 20px 0;
 }
 h1 {
-    font-size: clamp(20px, 3vw, 4rem);
+    font-size: clamp(25px, 3vw, 4rem);
 }
 p {
     margin-bottom: 1rem;
@@ -39,7 +39,13 @@ p {
 section {
     margin: 20px 0;    
 }
-.iconGithub{
+.iconMail{
+    filter: brightness(3);
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -6px;
+}
+.BtnIconGithub{
     &::before{
         content: "";
         display: inline-block;
@@ -163,8 +169,10 @@ section.SectionAbout{
             }
             p{
                 color: $blanco100;
+                padding: 0 1rem;
                 @media (width < 768px) {
                     margin-top: 2rem;
+                    padding: 0;
                     text-align: justify;
                 }
             }
@@ -270,7 +278,8 @@ section.SectionExperiencia{
 
                 li{
                     background-color: transparent;
-                    padding: 0 10px 0 0;
+                    padding: 0 0 0 10px;
+                    display: flex;
                     img{
                         width: 20px;
                     }
@@ -295,6 +304,7 @@ section.SectionExperiencia{
         }
     }
 }
+
 section.SectionEducacion{
     .container{
         ul{
